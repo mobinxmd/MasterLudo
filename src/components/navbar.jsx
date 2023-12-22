@@ -5,7 +5,7 @@ export default function Navbar() {
 
     return (
        <nav className={styles.navbar}>
-        nabvar
+        Player 1
        </nav>
     )
 }

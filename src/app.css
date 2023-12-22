@@ -6,6 +6,10 @@
     max-width: 64rem;
     height: calc(100vh - 5rem);
 }
+.topView{
+    display: flex;
+    justify-content: end;
+}
 
 
 @media only screen and (max-height: 768px) {

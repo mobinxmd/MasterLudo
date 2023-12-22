@@ -11,7 +11,9 @@ function App() {
   return (
        
         <div className="app">
-        <Navbar />
+        <div className="topView">
+          <Navbar />
+        </div>
           <GameBoard />
         <Footer />
         </div>

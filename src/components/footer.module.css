@@ -1,12 +1,11 @@
 
-.navbar{
-    background-color: var(--color-red);
+.footer{
+    background-color: var(--color-green);
     color: white;
     text-align: center;
     padding: 10px;
     width: 120px;
     backdrop-filter: blur(5px);
     border-radius: 7px;
-    
  
 }
