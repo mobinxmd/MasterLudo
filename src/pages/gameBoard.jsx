@@ -62,7 +62,6 @@ const redPatch = [
   "r_step_13",
   "r_step_14",
   "r_step_15",
-
 ];
 
 export default function GameBoard() {
@@ -153,7 +152,7 @@ export default function GameBoard() {
               </div>
             );
           } else if (i === 5 || i === 8 || i === 11 || i === 14 || i === 17) {
-            return <div key={i} className={`pathColor`}></div>;
+            return <div key={i} className={``}></div>;
           } else if (
             i === 4 ||
             i === 5 ||
@@ -239,34 +238,32 @@ export default function GameBoard() {
                 <h1>&#x21e6;</h1>
               </div>
             );
+            // } else if (
+            //   i === 0 ||
+            //   i === 1 ||
+            //   i === 2 ||
+            //   i === 3 ||
+            //   i === 4 ||
+            //   i === 5 ||
+            //   i === 11 ||
+            //   i === 17 ||
+            //   i === 16 ||
+            //   i === 15 ||
+            //   i === 14 ||
+            //   i === 13 ||
+            //   i === 12
+            // ) {
+            //   return <div key={i} className={`pathColor`}></div>;
           } else if (
-            i === 0 ||
-            i === 1 ||
-            i === 2 ||
-            i === 3 ||
-            i === 4 ||
-            i === 5 ||
-            i === 11 ||
-            i === 17 ||
-            i === 16 ||
-            i === 15 ||
-            i === 14 ||
-            i === 13 ||
-            i === 12
+            i === 6 ||
+            i === 7 ||
+            i === 8 ||
+            i === 9 ||
+            i === 10 ||
+            i === 16
           ) {
-            return <div key={i} className={`pathColor`}></div>;
-          }
-          //  else if (
-          //   i === 6 ||
-          //   i === 7 ||
-          //   i === 8 ||
-          //   i === 9 ||
-          //   i === 10 ||
-          //   i === 16
-          // ) {
-          //   return <div key={i} className={`$'bgYellow}`}></div>;
-          // }
-          else {
+            return <div key={i} className={`bgYellow`}></div>;
+          } else {
             return <div key={i}></div>;
           }
         })}
