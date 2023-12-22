@@ -24,3 +24,7 @@ Components
 
 useReducer - For global state management tracking game data (dice rolls, pawn positions, etc)
 useRef - For DOM node references
+
+# ScreenShots
+
+<img width="915" alt="ludo" src="https://github.com/mobinxmd/MasterLudo/assets/126049414/10806736-0311-4286-8c14-30b78cdfdac5">
