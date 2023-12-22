@@ -1,0 +1,145 @@
+.gameBoard{
+
+    border-image: linear-gradient(135deg, #FF6B6B, #FFD700, #4ECDC4, #1A535C);
+    border-image-slice: 1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 40% 20% 40%;
+    border: 3px solid #424242; /* Darker border */
+    position: relative;
+
+}
+
+
+.gameBoard div{
+    overflow: hidden;
+
+    border: 1px solid black;
+    transition: all 0.5s ease;
+}
+.gameBoard .top{
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.151);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+.gameBoard .bottom{
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.151);
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+.gameBoard .left{
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.151);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.gameBoard .right{
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.151);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.relative{
+    position: relative;
+}
+.bottom div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.symbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+}
+.bgBlue{
+    background-color: var(--color-blue);
+}
+.bgRed{
+    background-color: var(--color-red);
+}
+.bgYellow{
+    background-color: var(--color-yellow);
+}
+.bgGreen{
+    background-color: var(--color-green);
+}
+.symbolYellow{
+    color: var(--color-yellow);
+}
+.symbolRed{
+    color: var(--color-red);
+}
+.symbolBlue{
+    color: var(--color-blue);
+}
+.symbolGreen{
+    color: var(--color-green);
+}
+
+.pawnBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pathColor{
+    background-color: aqua !important;
+}
+
+.innerBox{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    padding: 2rem;
+    
+
+}
+.innerBox .box{
+    background-color: white;
+        width: 100%;
+        height: 100%;
+        border-radius: 15%;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+}
+.innerBox .box div{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

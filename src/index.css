@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&display=swap');
+:root {
+
+  font-family: 'Roboto', sans-serif;
+  --color-red: #FF6B6B;
+  --color-green: #7ab131;
+  --color-yellow: #FFD700;
+  --color-blue: #72B7E6;
+  background: linear-gradient(135deg, #001F3F 0%, #004D40 100%);
+  background-repeat: no-repeat;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+  box-sizing: border-box;
+}
